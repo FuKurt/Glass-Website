@@ -6,6 +6,7 @@
 }
 
 main {
+  font-family: "Poppins", sans-serif;
   min-height: 100vh;
   background: -webkit-gradient(linear, left bottom, right top, from(#65dfc9), to(#6cdbeb));
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
@@ -20,6 +21,25 @@ main {
           justify-content: center;
 }
 
+h1 {
+  color: #426696;
+  font-size: 3rem;
+  opacity: 0.8rem;
+  font-weight: 600;
+}
+
+h2, p {
+  color: #658ec6;
+  opacity: 0.8rem;
+  font-weight: 500;
+}
+
+h3 {
+  color: #426696;
+  opacity: 0.8rem;
+  font-weight: 600;
+}
+
 .glass {
   background: white;
   min-height: 60vh;
@@ -30,15 +50,19 @@ main {
   z-index: 2;
   -webkit-backdrop-filter: blur(2rem);
           backdrop-filter: blur(2rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .circle1, .circle2 {
   background: white;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
   height: 20rem;
   width: 20rem;
   position: absolute;
+  border-radius: 50%;
 }
 
 .circle1 {
@@ -49,5 +73,73 @@ main {
 .circle2 {
   bottom: 5%;
   left: 10%;
+}
+
+/*--------------------------------Dashboard----------------------------------*/
+.dashboard {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+}
+
+.dashboard__links--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+  padding: 1rem 5rem;
+}
+
+.dashboard__links--link h2 {
+  padding: 0 2rem;
+}
+
+.dashboard__pro {
+  background: -webkit-gradient(linear, left bottom, right top, from(#65dfc9), to(#6cdbeb));
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  margin: 1rem 2rem;
+  position: relative;
+}
+
+.dashboard__pro img {
+  position: absolute;
+  top: -10%;
+  right: 10%;
+}
+
+.dashboard__pro h2 {
+  width: 40%;
+  font-weight: 600;
+  color: white;
+}
+
+/*--------------------------------Games----------------------------------*/
+.games {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 /*# sourceMappingURL=style.css.map */
