@@ -7,42 +7,46 @@
 }
 
 main {
-  font-family: "Poppins", sans-serif;
-  min-height: 100vh;
   background: -webkit-gradient(linear, left bottom, right top, from(#65dfc9), to(#6cdbeb));
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
 }
 
-h1 {
+main h1 {
   color: #426696;
   font-size: 3rem;
   opacity: 0.8rem;
   font-weight: 600;
 }
 
-h2, p {
+main h2, main p {
   color: #658ec6;
   opacity: 0.8rem;
   font-weight: 500;
 }
 
-h3 {
+main h3 {
   color: #426696;
   opacity: 0.8rem;
   font-weight: 600;
 }
 
-.glass {
-  background: white;
+main .glass {
+  background: #fff;
   min-height: 60vh;
   width: 60%;
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
@@ -56,8 +60,8 @@ h3 {
   display: flex;
 }
 
-.circle1, .circle2 {
-  background: white;
+main .circle1, main .circle2 {
+  background: #fff;
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.3)));
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
   height: 20rem;
@@ -66,12 +70,12 @@ h3 {
   border-radius: 50%;
 }
 
-.circle1 {
+main .circle1 {
   top: 5%;
   right: 15%;
 }
 
-.circle2 {
+main .circle2 {
   bottom: 5%;
   left: 10%;
 }
@@ -88,12 +92,12 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
@@ -119,7 +123,7 @@ h3 {
   background: -webkit-gradient(linear, left bottom, right top, from(#65dfc9), to(#6cdbeb));
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   border-radius: 2rem;
-  color: white;
+  color: #fff;
   padding: 1rem;
   margin: 1rem 2rem;
   position: relative;
@@ -136,7 +140,7 @@ h3 {
 .dashboard__pro h2 {
   width: 40%;
   font-weight: 600;
-  color: white;
+  color: #fff;
 }
 
 /*--------------------------------Games----------------------------------*/
@@ -174,9 +178,16 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
   background: -webkit-gradient(linear, right bottom, left top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.5)));
   background: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
   border-radius: 1rem;
@@ -196,7 +207,7 @@ h3 {
   overflow: hidden;
 }
 
-.prog1::after {
+.games__cards--card .prog1::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -207,7 +218,7 @@ h3 {
   left: 60%;
 }
 
-.prog2::after {
+.games__cards--card .prog2::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -218,7 +229,7 @@ h3 {
   left: 35%;
 }
 
-.prog3::after {
+.games__cards--card .prog3::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -240,9 +251,12 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
 }
 
-.percentage {
+.games__cards--card .percentage {
   font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
